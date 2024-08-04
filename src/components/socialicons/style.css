@@ -1,10 +1,11 @@
 .stick_follow_icon {
-    top: 50%;
-    left: 30px;
-    width: 20px;
-    height: 200px;
-    position: fixed;
-    margin-top: -100px;
+    bottom: 0; /* Position at the bottom */
+    left: 0;   /* Align to the left side */
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    position: fixed; /* Fix it in place */
+    margin: 0; /* Remove margin */
+    padding: 10px; /* Optional padding for spacing */
 }
 
 .stick_follow_icon ul {
@@ -16,21 +17,20 @@
 .stick_follow_icon svg {
     width: 1.3em;
     height: 1.3em;
-    fill: var(--text-color)
+    fill: var(--text-color);
 }
 
 .stick_follow_icon p {
-    top: 70px;
-    left: -24px;
-    width: 68px;
-    height: 20px;
+    width: auto;
+    height: auto;
     color: var(--text-color);
     font-size: 12px;
     font-weight: 600;
     line-height: 1.2;
     white-space: nowrap;
     position: relative;
-    transform: rotate( -90deg);
+    transform: rotate(0deg); /* Remove rotation */
+    margin-bottom: 10px; /* Adjust spacing as needed */
 }
 
 .stick_follow_icon ul li {
@@ -42,45 +42,36 @@
 }
 
 .stick_follow_icon p:after {
-    top: 9px;
-    right: -48px;
-    width: 40px;
-    height: 1px;
     content: "";
     display: block;
     position: absolute;
     background-color: var(--text-color);
+    width: 40px;
+    height: 1px;
+    bottom: -10px; /* Adjust position relative to text */
+    left: 0;
 }
 
 @media only screen and (max-width: 991px) {
     .stick_follow_icon {
-        width: unset;
-        height: unset;
-        position: static;
-        margin-top: unset;
+        width: auto; /* Adjust width */
+        height: auto; /* Adjust height */
+        position: static; /* Change position for smaller screens */
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row; /* Arrange items horizontally */
         justify-content: center;
-        padding: 40px 0;
-        align-items: center;
+        padding: 20px; /* Adjust padding for mobile */
     }
     .stick_follow_icon p {
-        top: unset;
-        left: unset;
-        width: unset;
-        height: unset;
-        white-space: nowrap;
-        position: relative;
-        transform: unset;
-        font-size: 17px;
-        margin-right: 65px;
+        font-size: 17px; /* Larger font size for mobile */
+        margin-right: 0; /* Adjust margin */
     }
     .stick_follow_icon ul {
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Adjust spacing for mobile */
     }
     .stick_follow_icon ul li {
         display: inline;
-        margin-bottom: 29px;
-        margin-right: 10px;
+        margin-bottom: 0;
+        margin-right: 1
     }
 }

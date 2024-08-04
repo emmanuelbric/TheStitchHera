@@ -1,42 +1,55 @@
-@media only screen and (max-width: 991px) {
-    .s_c {
-        padding-top: 40px;
-    }
-}
+/* Ensure the background covers the full width and height of the viewport */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
 
-.page-enter {
-    transform: translateY(100%);
-}
-
-.page-enter-active {
-    transform: translateY(0%);
-    transition: all 400ms ease-out;
-}
-
-.page-exit {
-    transform: translateY(0%);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-}
-
-.page-exit-active {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    transform: translateY(-130%);
-    transition: all 400ms ease-out;
-}
-
-@media (min-width: 1400px) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl,
-    .container-xxl {
-        max-width: 1140px;
-    }
-}
+  /* Responsive padding adjustment for smaller screens */
+  @media only screen and (max-width: 991px) {
+      .s_c {
+          padding-top: 40px;
+      }
+  }
+  
+  /* Page transition animations */
+  .page-enter {
+      transform: translateY(100%);
+  }
+  
+  .page-enter-active {
+      transform: translateY(0%);
+      transition: all 400ms ease-out;
+  }
+  
+  .page-exit {
+      transform: translateY(0%);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+  }
+  
+  .page-exit-active {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      transform: translateY(-130%);
+      transition: all 400ms ease-out;
+  }
+  
+  /* Container width adjustment for larger screens */
+  @media (min-width: 1400px) {
+      .container,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+          max-width: 1140px;
+      }
+  }
+  

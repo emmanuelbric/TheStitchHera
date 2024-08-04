@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
+
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
 
@@ -38,13 +39,13 @@ const Headermain = () => {
                   <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                  <Link onClick={handleToggle} to="/ProblemStatement" className="my-3">Problems Statement</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
+                  <Link onClick={handleToggle} to="/SolutionConcept" className="my-3"> Concept Statement</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
+                  <Link onClick={handleToggle} to="/ImplementationAndCustomization" className="my-3">Implementation</Link>
                   </li>
                 </ul>
               </div>
@@ -55,7 +56,7 @@ const Headermain = () => {
             <a href={socialprofils.facebook}>Facebook</a>
             <a href={socialprofils.github}>Github</a>
             <a href={socialprofils.twitter}>Twitter</a>
-            </div>
+          </div>
             <p className="copyright m-0">copyright __ {logotext}</p>
           </div>
         </div>

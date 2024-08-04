@@ -5,9 +5,10 @@ import {
   useLocation,
 } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
-import AppRoutes from "./routes";
-import Headermain from "../header";
-import AnimatedCursor  from "../hooks/AnimatedCursor";
+import AppRoutes from "./AppRoutes";
+import Headermain from "../header"; // Ensure this path is correct
+import AnimatedCursor from "../hooks/AnimatedCursor"; // Ensure this path is correct
+import ThemeToggle from "../components/themetoggle"; // Updated import
 import "./App.css";
 
 function _ScrollToTop(props) {
